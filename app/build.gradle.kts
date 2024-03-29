@@ -7,6 +7,10 @@ android {
     namespace = "ru.netology.nmedia"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "ru.netology.nmedia"
         minSdk = 23

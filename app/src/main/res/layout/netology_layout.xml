@@ -21,7 +21,6 @@
         android:id="@+id/author"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/post_author"
         app:layout_constraintBottom_toTopOf="@+id/published"
         app:layout_constraintTop_toTopOf="@id/avatar"
         app:layout_constraintStart_toEndOf="@id/avatar"
@@ -36,7 +35,6 @@
         android:id="@+id/published"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/post_published"
         app:layout_constraintTop_toBottomOf="@id/author"
         app:layout_constraintBottom_toBottomOf="@id/barrier_up"
         app:layout_constraintEnd_toStartOf="@id/menu"
@@ -65,10 +63,9 @@
         />
 
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/post_text"
         app:layout_constraintTop_toBottomOf="@id/barrier_up"
         app:layout_constraintBottom_toTopOf="@id/barrier_down"
         android:layout_marginTop="@dimen/common_size"
@@ -80,8 +77,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="bottom"
-        app:constraint_referenced_ids="text"
-        app:layout_constraintTop_toBottomOf="@id/text"
+        app:constraint_referenced_ids="content"
+        app:layout_constraintTop_toBottomOf="@id/content"
         />
 
     <ImageView
@@ -102,7 +99,7 @@
         app:layout_constraintTop_toBottomOf="@id/barrier_down"
         android:layout_marginTop="@dimen/common_size"
         android:layout_marginStart="@dimen/icon_margin_size"
-        tools:text="10"
+        tools:text="0"
         />
 
     <ImageView
@@ -124,7 +121,7 @@
         app:layout_constraintTop_toBottomOf="@id/barrier_down"
         android:layout_marginTop="@dimen/common_size"
         android:layout_marginStart="@dimen/icon_margin_size"
-        tools:text="5"
+        tools:text="0"
         />
 
     <ImageView
@@ -144,7 +141,7 @@
         android:layout_marginTop="@dimen/common_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/barrier_down"
-        tools:text="5"
+        tools:text="0"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
