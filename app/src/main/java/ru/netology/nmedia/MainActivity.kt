@@ -10,6 +10,9 @@ class MainActivity : AppCompatActivity() {
         val binding = NetologyLayoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Не понимаю почему не получается к ресурсу strings.xml обратиться корректно через
+        // R.string.post_published или R.string.post_content.
+        // При этом он возвращает int, я так понимаю это какой-то идентификатор
         val post = Post(
             id = 1,
             author = "Нетология. Университет интернет-профессий",
