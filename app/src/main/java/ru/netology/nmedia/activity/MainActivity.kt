@@ -27,11 +27,9 @@ class MainActivity : AppCompatActivity() {
                 like.setImageResource(
                     if (post.likedByMe) R.drawable.like_red else R.drawable.like
                 )
-
                 like.setOnClickListener {
                     viewModel.like()
                 }
-
                 share.setOnClickListener {
                     viewModel.share()
                 }
