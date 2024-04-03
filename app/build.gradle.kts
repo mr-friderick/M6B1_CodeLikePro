@@ -40,12 +40,27 @@ android {
 }
 
 dependencies {
+    val coreVersion = "1.12.0"
+    val appcompatVersion = "1.6.1"
+    val mdcVersion = "1.11.0"
+    val constraintlayoutVersion = "2.1.4"
+    val recyclerviewVersion = "1.3.2"
+    val junitVersion = "4.13.2"
+    val extJunitVersion = "1.1.5"
+    val espressoCoreVersion = "3.5.1"
+    val activityVersion = "1.8.2"
+    val lifecycleVersion = "2.7.0"
 
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.11.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation("androidx.core:core-ktx:$coreVersion")
+    implementation("androidx.appcompat:appcompat:$appcompatVersion")
+    implementation("com.google.android.material:material:$mdcVersion")
+    implementation("androidx.constraintlayout:constraintlayout:$constraintlayoutVersion")
+    implementation("androidx.recyclerview:recyclerview:$recyclerviewVersion")
+    implementation("androidx.activity:activity-ktx:$activityVersion")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion")
+
+    testImplementation("junit:junit:$junitVersion")
+    androidTestImplementation("androidx.test.ext:junit:$extJunitVersion")
+    androidTestImplementation("androidx.test.espresso:espresso-core:$espressoCoreVersion")
 }
